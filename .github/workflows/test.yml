@@ -5,6 +5,7 @@ on:
     types: [opened, reopened]
 jobs:
   add-emoji:
+    permissions: write-all
     runs-on: [ubuntu-latest]
     steps:
       - name: checkout
