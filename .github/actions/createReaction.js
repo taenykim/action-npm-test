@@ -6,5 +6,5 @@ octokit.rest.reactions.createForIssue({
   owner: "taenykim",
   repo: "action-npm-test",
   issue_number: context.issue.number,
-  content: "heart",
+  content: "laugh",
 });
