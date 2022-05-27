@@ -1,0 +1,20 @@
+{
+  "name": "action-npm-test",
+  "version": "1.0.0",
+  "description": "- npm `save` 와 `package-lock` 플래그 Action vm server에서 테스트",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "next": "node next.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taenykim/action-npm-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taenykim/action-npm-test/issues"
+  },
+  "homepage": "https://github.com/taenykim/action-npm-test#readme"
+}
