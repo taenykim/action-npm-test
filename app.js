@@ -15,4 +15,4 @@ execSyncToString("git config user.email github-actions@github.com");
 
 execSyncToString("git add .");
 execSyncToString('git commit -m "test"');
-execSyncToString("git push origin test7");
+execSyncToString("git push");
