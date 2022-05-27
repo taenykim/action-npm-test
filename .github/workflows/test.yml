@@ -19,3 +19,4 @@ jobs:
       - run: node .github/actions/createReaction.js
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TEST_SECRET: ${{ secrets.TEST_SECRET }}
