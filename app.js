@@ -10,6 +10,9 @@ console.log(next);
 
 execSyncToString('echo "hello" > test.txt');
 
+execSyncToString("git config user.name github-actions");
+execSyncToString("git config user.email github-actions@github.com");
+
 execSyncToString("git add .");
 execSyncToString('git commit -m "test"');
 execSyncToString("git push origin test7");
