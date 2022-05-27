@@ -3,4 +3,6 @@ const execSyncToString = (param) => execSync(param).toString("utf8");
 
 console.log("start", process.env.TEST_SECRET);
 
-execSyncToString("npm run next");
+const next = execSyncToString("npm run next");
+
+console.log(next);
