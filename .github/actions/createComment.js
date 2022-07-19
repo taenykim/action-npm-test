@@ -16,7 +16,7 @@ const octokit = getOctokit(process.env.GITHUB_TOKEN);
     })
     .filter((item) => {
       console.log(item.body);
-      return item.body.includes(`### 데모`);
+      return item.body.includes(`### 데모\n\n`);
     });
 
   console.log(a);
