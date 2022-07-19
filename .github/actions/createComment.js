@@ -10,8 +10,15 @@ const octokit = getOctokit(process.env.GITHUB_TOKEN);
     repo: "action-npm-test",
     issue_number: context.issue.number,
   });
+  const a = res.data
+    .filter((item) => {
+      return item.user.login === `github-actions[bot]`;
+    })
+    .filter((item) => {
+      return item.body.includes(`### 데모\n\n`);
+    });
 
-  console.log(res.data);
+  console.log(a);
 })();
 // octokit.rest.issues.createComment({
 //   owner: "taenykim",
