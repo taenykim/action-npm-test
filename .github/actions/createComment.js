@@ -15,6 +15,7 @@ const octokit = getOctokit(process.env.GITHUB_TOKEN);
       return item.user.login === `github-actions[bot]`;
     })
     .filter((item) => {
+      console.log(item.body);
       return item.body.includes(`### 데모\n\n`);
     });
 
