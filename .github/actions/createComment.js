@@ -2,7 +2,7 @@ const { getOctokit, context } = require("@actions/github");
 
 const octokit = getOctokit(process.env.GITHUB_TOKEN);
 
-const action = context.action;
+const action = context.payload.action;
 
 octokit.rest.issues.createComment({
   owner: "taenykim",
