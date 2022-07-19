@@ -19,7 +19,7 @@ const octokit = getOctokit(process.env.GITHUB_TOKEN);
       return item.body.includes(`### 데모`);
     });
 
-  console.log(a);
+  console.log(a.length);
 })();
 // octokit.rest.issues.createComment({
 //   owner: "taenykim",
