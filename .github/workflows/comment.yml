@@ -16,3 +16,5 @@ jobs:
           node-version: "16.x"
       - run: npm install --save=false @actions/github
       - run: npm run comment
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
