@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "eval $(node getToken.js) && node app.js",
+    "comment": "node .github/actions/createComment.js",
     "next": "node next.js"
   },
   "repository": {
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/taenykim/action-npm-test/issues"
   },
-  "homepage": "https://github.com/taenykim/action-npm-test#readme"
+  "homepage": "https://github.com/taenykim/action-npm-test#readme",
+  "dependencies": {
+    "@actions/github": "^5.0.3"
+  }
 }

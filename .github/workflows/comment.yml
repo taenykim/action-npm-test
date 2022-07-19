@@ -1,0 +1,18 @@
+name: add comment
+on:
+  pull_request:
+    branch: [master]
+    types: [opened, reopened, synchronize]
+jobs:
+  add-emoji:
+    permissions: write-all
+    runs-on: [ubuntu-latest]
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16.x"
+      - run: npm install --save=false @actions/github
+      - run: npm run comment
