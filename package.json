@@ -4,7 +4,7 @@
   "description": "- npm `save` 와 `package-lock` 플래그 Action vm server에서 테스트",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "eval $(node getToken.js) && node app.js",
     "next": "node next.js"
   },
   "repository": {
